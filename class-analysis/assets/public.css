@@ -716,7 +716,3 @@ backface-visibility: hidden;}
 .menu-14 a:hover{color: #e72427;}
 .menu-15{display: flex;padding: 56px 100px 50px;height: 100%;}
 .menu-15>.menu-7{width: 50%;flex-shrink: 0;height: 100%;overflow: hidden;position: relative;}
-.lm-icon{
-  width: 300px;
-  height: 150px;
-}
