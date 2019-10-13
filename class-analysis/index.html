@@ -36,7 +36,7 @@
 	<link rel="stylesheet" href="./assets/animation.css">
 	<link rel="stylesheet" href="./assets/swiper.min.css">
 	<link rel="stylesheet" href="./assets/bootstrap.css">
-	<link rel="stylesheet" href="./assets/public.css">
+	<link rel="stylesheet" href="../static/css/public.css">
 	<link rel="stylesheet" href="./assets/index.css">
 	<link rel="stylesheet" href="./assets/erji.css">
 	<link rel="stylesheet" href="./assets/iconfont.css">
@@ -48,7 +48,7 @@
 	<script type="text/javascript" src="./assets/js.js"></script>
 	<script type="text/javascript" src="./assets/bootstrap.js"></script>
 	<script type="text/javascript" src="./assets/scrollBar.js"></script>
-	<link type="image/x-icon" rel="shortcut icon" href="https://www.sensetime.com/images/logo.ico">
+	<link type="image/x-icon" rel="shortcut icon" href="../images/logo.ico">
 </head>
 
 <body>
@@ -60,68 +60,53 @@
 				src="./images/logo_white.png" class="logo2"></a>
 		<a href="../home/index.html" class="logo" id="logo2"><img src="./images/logo.png"></a>
 		<ul class="nav" id="nav">
-			<li class="" style="position: relative;">
-				<a>核心技术</a>
-			</li>
 			<li class="">
 				<a>产品服务</a>
-			</li>
-			<li class="">
-				<a>客户案例</a>
-				<script>
-					//案例下拉菜单滚动条
-					new CusScrollBar({
-						contentSelector: '.scroll_cont', //滚动内容区
-						barSelector: '.scroll_bar', //滚动条
-						sliderSelector: '.scroll_slider' //滚动滑块
-					});
-
-					/*案例下拉菜单*/
-
-					$('.menu-7 .menu-13').each(function (i) {
-						$(this).click(function () {
-							if ($(this).parent().next('.menu-14').is(":visible")) {
-								$(this).removeClass('hover');
-								$('.menu-14').slideUp(300);
-							} else {
-								$('.menu-14').slideUp(300);
-								$('.menu-13').removeClass('hover');
-								$(this).addClass('hover');
-								$(this).parent().next('.menu-14').slideDown(300);
-							}
-
-							setTimeout(function () {
-								if ($('.menu-15').outerHeight() - 10 <= $('.scroll_cont').outerHeight()) {
-									$('.scroll_bar').css('opacity', 0)
-								} else {
-									$('.scroll_bar').css('opacity', 1)
-								}
-							}, 400);
-
-						})
-					})
-				</script>
-			</li>
-			<li class="">
-				<a>关于灵眸</a>
 				<div class="menu-box menu-box-1">
 					<div class="menu-9">
 						<div class="menu-10">
-							<a href="#">灵眸使命</a>
-							<a href="#" onclick="go_hash('company');">灵眸介绍</a>
-							<a href="#" onclick="go_hash('progress');">灵眸之路</a>
-							<a href="#" onclick="go_hash('culture');">联系我们</a>
-
+							<a href="../car-recognition/index.html">车辆识别与交通仿真</a>
+							<a href="../scene-recognition/index.html">场景识别及信息服务平台</a>
+							<a href="../robot/index.html">无障碍导览机器人</a>
+							<a href="../glasses/index.html">智能眼镜</a>
+							<a href="../class-analysis/index.html">课堂行为分析</a>
 						</div>
 					</div>
 				</div>
 			</li>
-			
+			<li class="">
+				<a>客户案例</a>
+				<div class="menu-box menu-box-2">
+					<div class="menu-9">
+						<div class="menu-10">
+							<a href="">智慧城市</a>
+							<a href="">智能设备</a>
+							<a href="">智能手机</a>
+							<a href="">智能手机</a>
+							<a href="">智能健康</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="">
+				<a>关于灵眸</a>
+				<div class="menu-box menu-box-3">
+					<div class="menu-9">
+						<div class="menu-10">
+							<a href="">灵眸使命</a>
+							<a href="">灵眸介绍</a>
+							<a href="">灵眸之路</a>
+							<a href="">联系我们</a>
+						</div>
+					</div>
+				</div>
+			</li>
 		</ul>
+
 		<div class="lang hidden-xs">
-			<a class="hover">中</a>
-			<a href="#">EN</a>
+
 		</div>
+
 		<button type="button" class="navbar-toggle" id="nav-btn">
 			<span class="sr-only">切换导航</span>
 			<span class="icon-bar bar-1"></span>
@@ -129,103 +114,6 @@
 			<span class="icon-bar bar-3"></span>
 		</button>
 	</header>
-	<!--手机导航-->
-	<ul id="phone-nav" class="phone-nav">
-		<li><a>产品服务</a>
-			<div class="phone-nav-1">
-				<p class="fanhui"><span class="mui-icon mui-icon-arrowleft"></span>返回</p>
-				<a href="https://www.sensetime.com/Service/Security_SenseFoundry.html">智慧城市</a>
-				<a href="https://www.sensetime.com/Service/Phone_SenseMatrix.html">智能手机</a>
-				<a href="https://www.sensetime.com/Service/sensear_augmentreality.html">泛文化娱乐</a>
-				<a class="phone-nav-znqc">
-					智能汽车</a>
-				<div class="phone-nav-znqc-box">
-					<a href="https://www.sensetime.com/Service/Drive_SenseDrive.html">智能驾驶</a>
-					<a href="https://www.sensetime.com/Service/Car_FaceRecognition.html">智能车舱</a>
-				</div>
-				<div style="margin-left: 4.6%;border-bottom: 1px solid #e6e6e6;"></div>
-				<a href="https://www.sensetime.com/Service/Medical_diagnosis.html">智慧健康</a>
-				<a href="https://www.sensetime.com/Service/Finance_SenseID.html">智慧商业与金融</a>
-				<a href="https://www.sensetime.com/Service/ai_class.html">教育</a>
-				<a href="https://www.sensetime.com/Service/Advertisement_SenseFocus.html">广告</a>
-				<p style="
-	    position: absolute;
-	    display: block;
-	    bottom: 1rem;
-	    margin-left: 4.6%;
-	"><a href="https://www.sensetime.com/Public/form.html" style="color: #969696;">申请试用</a><span
-						class="mui-icon-extra mui-icon-extra-arrowright"></span></p>
-			</div>
-		</li>
-		<script>
-			$(function () {
-				$('.phone-nav-znqc').click(function () {
-					if ($(this).hasClass('hover')) {
-						$(this).removeClass('hover');
-						$(this).next('.phone-nav-znqc-box').slideUp();
-					} else {
-						$(this).addClass('hover');
-						$(this).next('.phone-nav-znqc-box').slideDown();
-					}
-
-				})
-			})
-		</script>
-		<li><a>客户案例</a>
-			<div class="phone-nav-1">
-				<p class="fanhui"><span class="mui-icon mui-icon-arrowleft"></span>返回</p>
-
-
-				<a class="phone-nav-znqc">智慧城市</a>
-				<div class="phone-nav-znqc-box">
-					<a href="https://www.sensetime.com/Case/index/id/1.html">智慧安防</a><a
-						href="https://www.sensetime.com/Case/index/id/9.html">智慧交通</a><a
-						href="https://www.sensetime.com/Case/index/id/13.html">智能设备</a><a
-						href="https://www.sensetime.com/Case/index/id/8.html">运营商</a><a
-						href="https://www.sensetime.com/Case/index/id/14.html">遥感</a><a
-						href="https://www.sensetime.com/Case/index/id/17.html">视频大数据</a> </div>
-				<div style="margin-left: 4.6%;border-bottom: 1px solid #e6e6e6;"></div>
-				<a href="https://www.sensetime.com/Case/index/id/3.html">智能手机</a> <a
-					href="https://www.sensetime.com/Case/index/id/2.html">泛文化娱乐</a><a class="phone-nav-znqc">智能汽车</a>
-				<div class="phone-nav-znqc-box">
-					<a href="https://www.sensetime.com/Case/index/id/20.html">智能驾驶</a><a
-						href="https://www.sensetime.com/Case/index/id/21.html">智能车舱</a> </div>
-				<div style="margin-left: 4.6%;border-bottom: 1px solid #e6e6e6;"></div> <a
-					href="https://www.sensetime.com/Case/index/id/16.html">智慧健康</a><a class="phone-nav-znqc">智慧商业与金融</a>
-				<div class="phone-nav-znqc-box">
-					<a href="https://www.sensetime.com/Case/index/id/22.html">线上金融</a><a
-						href="https://www.sensetime.com/Case/index/id/23.html">线下金融</a><a
-						href="https://www.sensetime.com/Case/index/id/5.html">智慧零售</a> </div>
-				<div style="margin-left: 4.6%;border-bottom: 1px solid #e6e6e6;"></div> <a
-					href="https://www.sensetime.com/Case/index/id/7.html">教育</a>
-			</div>
-		</li>
-		<li><a>关于灵眸</a>
-			<div class="phone-nav-1">
-				<p class="fanhui"><span class="mui-icon mui-icon-arrowleft"></span>返回</p>
-				<a href="https://www.sensetime.com/about.html">灵眸使命</a>
-				<a href="https://www.sensetime.com/about.html#company">灵眸介绍</a>
-				<a href="https://www.sensetime.com/about.html#progress">灵眸之路</a>
-				<a href="https://www.sensetime.com/about.html#culture">联系我们</a>
-
-			</div>
-		</li>
-		<li><a>加入我们</a>
-			<div class="phone-nav-1">
-				<p class="fanhui"><span class="mui-icon mui-icon-arrowleft"></span>返回</p>
-				<a href="https://joinus.sensetime.com/index.html#nrnav-box">走进灵眸</a>
-				<a href="https://joinus.sensetime.com/Index/news.html#nrnav-box">灵眸动态</a>
-				<a href="https://sensetime.m.zhiye.com/?from=singlemessage&amp;isappinstalled=0">简历投递</a>
-
-			</div>
-		</li>
-		<li style="height: 3rem;line-height: 3rem;border-bottom: none;"><a href="https://www.sensetime.com/en"
-				style="background:none;">EN&nbsp;&nbsp;<span
-					class="mui-icon-extra mui-icon-extra-arrowright"></span></a></li>
-	</ul>
-	<div id="headerHeight" style="height: 60px;"></div>
-
-
 
 
 
