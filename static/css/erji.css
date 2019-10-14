@@ -326,7 +326,7 @@ justify-content: space-between;}
 .gyst-1>.text{width: 39%;}
 .gyst-1>.text>h1{font-size: 1rem;line-height: 1.6;margin: 0 0 1.2rem;}
 .gyst-2{height: 780px;display: flex;align-items: center;font-size: 18px;line-height: 1.78;color: #fff;
-background: url(../images/gyst-img2-bg.jpg)no-repeat center; ;}
+background: url(../images/gyst-img2-bg.jpg)no-repeat center; background-size: 100% 100%;}
 .gyst-2 .text{max-width: 610px;float: right;position: relative;z-index: 1;/*padding-right: 50px;*/text-align: justify;}
 .gyst-2 .text h1{color: #ec4043;font-size: .64rem;margin: 0 0 .8rem;font-weight: 400;}
 .gyst-title{color: #ec4043;font-size: .64rem;margin: 0 0 1.2rem;font-weight: 400;}
