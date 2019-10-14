@@ -14,10 +14,7 @@
 			padding-top: 56.25%
 		}
 
-		.lm-icon {
-			width: 300px;
-			height: 150px;
-		}
+		
 	</style>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,38 +25,38 @@
 	<!--[if lte IE9]>
 	<script>window.location.href = 'http://cdn.dmeng.net/upgrade-your-browser.html?referrer=' + location.href;</script>
 	<![endif]-->
-	<script type="text/javascript" async="" src="./assets/analytics.js"></script>
-	<script src="./assets/hm.js"></script>
-	<script src="./assets/hm(1).js"></script>
+	<script type="text/javascript" async="" src="../static/images/analytics.js"></script>
+	<script src="../static/js/hm.js"></script>
+	<script src="../static/js/hm(1).js"></script>
 	<script>/*@cc_on window.location.href="http://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); @*/</script>
-	<link rel="stylesheet" href="./assets/roll.css">
-	<link rel="stylesheet" href="./assets/animation.css">
-	<link rel="stylesheet" href="./assets/swiper.min.css">
-	<link rel="stylesheet" href="./assets/bootstrap.css">
+	<link rel="stylesheet" href="../static/css/roll.css">
+	<link rel="stylesheet" href="../static/css/animation.css">
+	<link rel="stylesheet" href="../static/css/swiper.min.css">
+	<link rel="stylesheet" href="../static/css/bootstrap.css">
 	<link rel="stylesheet" href="../static/css/public.css">
-	<link rel="stylesheet" href="./assets/index.css">
-	<link rel="stylesheet" href="./assets/erji.css">
-	<link rel="stylesheet" href="./assets/iconfont.css">
-	<link href="./assets/video-js.min.css" rel="stylesheet">
-	<script src="./assets/video.min.js"></script>
-	<script type="text/javascript" src="./assets/jquery.min.js"></script>
-	<script type="text/javascript" src="./assets/swiper.min.js"></script>
-	<script type="text/javascript" src="./assets/wow.js"></script>
-	<script type="text/javascript" src="./assets/js.js"></script>
-	<script type="text/javascript" src="./assets/bootstrap.js"></script>
-	<script type="text/javascript" src="./assets/scrollBar.js"></script>
-	<link type="image/x-icon" rel="shortcut icon" href="../images/logo.ico">
+	<link rel="stylesheet" href="../static/css/index.css">
+	<link rel="stylesheet" href="../static/css/erji.css">
+	<link rel="stylesheet" href="../static/css/iconfont.css">
+	<link href="../static/css/video-js.min.css" rel="stylesheet">
+	<script src="../static/js/video.min.js"></script>
+	<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../static/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../static/js/wow.js"></script>
+	<script type="text/javascript" src="../static/js/js.js"></script>
+	<script type="text/javascript" src="../static/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../static/js/scrollBar.js"></script>
+	<link type="image/x-icon" rel="shortcut icon" href="../static/images/logo.ico">
 
 </head>
 
 <body>
 	<div class="wxopen">
-		<img src="./assets/wxopen.png" alt="">
+		<img src="../static/images/wxopen.png" alt="">
 	</div>
 	<header class="index_header">
-		<a href="../home/index.html" class="logo" id="logo1"><img src="./images/logo.png" class="logo1"><img
+		<a href="../home/index.html" class="logo" id="logo1"><img src="../static/images/logo.png" class="logo1"><img
 				src="./images/logo_white.png" class="logo2"></a>
-		<a href="../home/index.html" class="logo" id="logo2"><img src="./images/logo.png"></a>
+		<a href="../home/index.html" class="logo" id="logo2"><img src="../static/images/logo.png"></a>
 		<ul class="nav" id="nav">
 			<li class="">
 				<a>产品服务</a>
@@ -94,17 +91,14 @@
 				<div class="menu-box menu-box-3">
 					<div class="menu-9">
 						<div class="menu-10">
-							<a href="">灵眸使命</a>
 							<a href="">灵眸介绍</a>
-							<a href="">灵眸之路</a>
-							<a href="">联系我们</a>
 						</div>
 					</div>
 				</div>
 			</li>
 		</ul>
 
-		<div class="lang hidden-xs">
+		<div class="lang hidden-xs" style="width: 90px">
 
 		</div>
 
@@ -115,95 +109,7 @@
 			<span class="icon-bar bar-3"></span>
 		</button>
 	</header>
-	<!-- <header class="index_header">
-		<a href="../home/index.html" class="logo"id="logo1"><img src="./images/logo.png" class="logo1"><img src="./images/logo_white.png"
-				class="logo2"></a>
-		<a href="../home/index.html" class="logo"id="logo2"><img src="./images/logo.png"></a>
-		<ul class="nav" id="nav">
-			<li class="" style="position: relative;">
-				<a>核心技术</a>
-			</li>
-			<li class="">
-				<a>产品服务</a>
-			</li>
-			<li class="">
-				<a>客户案例</a>
-				<script>
-					//案例下拉菜单滚动条
-					new CusScrollBar({
-						contentSelector: '.scroll_cont', //滚动内容区
-						barSelector: '.scroll_bar', //滚动条
-						sliderSelector: '.scroll_slider' //滚动滑块
-					});
-
-					/*案例下拉菜单*/
-
-					$('.menu-7 .menu-13').each(function (i) {
-						$(this).click(function () {
-							if ($(this).parent().next('.menu-14').is(":visible")) {
-								$(this).removeClass('hover');
-								$('.menu-14').slideUp(300);
-							} else {
-								$('.menu-14').slideUp(300);
-								$('.menu-13').removeClass('hover');
-								$(this).addClass('hover');
-								$(this).parent().next('.menu-14').slideDown(300);
-							}
-
-							setTimeout(function () {
-								if ($('.menu-15').outerHeight() - 10 <= $('.scroll_cont').outerHeight()) {
-									$('.scroll_bar').css('opacity', 0)
-								} else {
-									$('.scroll_bar').css('opacity', 1)
-								}
-							}, 400);
-
-						})
-					})
-
-
-				</script>
-			</li>
-			 
-			<li class="">
-				<a>关于灵眸</a>
-				<div class="menu-box menu-box-1">
-					<div class="menu-9">
-						<div class="menu-10">
-							<a href="#">灵眸使命</a>
-							<a href="#" onclick="go_hash('company');">灵眸介绍</a>
-							<a href="#" onclick="go_hash('progress');">灵眸之路</a>
-							<a href="#" onclick="go_hash('culture');">联系我们</a>
-
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="" style="position: relative;">
-				<a>加入我们</a>
-				<div class="menu-box menu-box-1 menu-box-jrwm">
-					<div class="menu-9">
-						<div class="menu-10">
-							<a href="#">走进灵眸</a>
-							<a href="#">灵眸动态</a>
-							<a href="#">简历投递</a>
-						</div>
-					</div>
-				</div>
-			</li>
-		</ul>
-		<div class="lang hidden-xs">
-			<a class="hover">中</a>
-			<a href="#">EN</a>
-		</div>
-		<button type="button" class="navbar-toggle" id="nav-btn">
-			<span class="sr-only">切换导航</span>
-			<span class="icon-bar bar-1"></span>
-			<span class="icon-bar bar-2"></span>
-			<span class="icon-bar bar-3"></span>
-		</button>
-	</header> -->
-
+	<div id="headerHeight"></div>
 	<!--banner-->
 	<section class="nr-banner a-background" style="background-image: url(./images/banner.jpg);">
 		<div class="width-1220" style="color: #000;">
@@ -283,7 +189,7 @@
 			<div class="cp-bg a-background" style="background-image: url(./images/Transportation2.jpg);"></div>
 			<div class="cp-text width-1220 cp-text2 cp-text4">
 				<div class="cp-text1">
-					<h2 class="cp-text-h2 wow fadeInUpa" style="visibility: hidden; animation-name: none; color: #000;">
+					<h2 class="cp-text-h2 wow fadeInUpa" style="visibility: hidden; animation-name: none;">
 						警务执法</h2>
 				</div>
 			</div>
@@ -321,7 +227,7 @@
 	<!--footer-->
 	<footer class="bg-252526">
 		<div class="width-1220 footer-1">
-			<p class="footer-3">商业合作：<span>400 900 5986</span><i> ( 周一到周五 9:00-18:00 )</i>
+			<p class="footer-3">商业合作：<span>000 000 0000</span><i> ( 周一到周五 9:00-18:00 )</i>
 				<span class="pull-right">business@lingmoushijie.com</span>
 			</p>
 			<div class="footer-2">
@@ -334,21 +240,21 @@
 				<!--			<a href="/en" class="visible-xs-inline">ENGLISH</a>-->
 			</div>
 			<div class="footer-4">
-				<div class="footer-logo"><img width="104px" height="34px" src="./images/footer-logo.png"></div>
+				<div class="footer-logo"><img width="104px" height="34px" src="../static/images/footer-logo.png"></div>
 				<a class="footer-6" id="wxbox2">
-					<img src="./assets/footer-wx.png">
+					<img src="../static/images/footer-wx.png">
 					<div class="wxbox" style="display:none;">
-						<img src="./assets/erwm.png" alt="">
+						<img src="../static/images/erwm.png" alt="">
 					</div>
 				</a>
-				<a class="footer-6 " id="wxbox"><img src="./assets/footer-weibo.png">
+				<a class="footer-6 " id="wxbox"><img src="../static/images/footer-weibo.png">
 					<div class="wxbox" style="display:none;">
-						<img src="./assets/erwm1.png" alt="">
+						<img src="../static/images/erwm1.png" alt="">
 					</div>
 				</a>
 
 				<a href="#" class="footer-5" target="_blank" style="margin-right: 0;">
-					<img src="./assets/footer-linkedin.png">
+					<img src="../static/images/footer-linkedin.png">
 				</a>
 			</div>
 		</div>
@@ -432,7 +338,7 @@
 
 	<!--返回顶部按钮-->
 	<div class="to-top" id="to-top">
-		<div class="m-center"><img src="./assets/jt-5.png"></div>
+		<div class="m-center"><img src="../static/images/jt-5.png"></div>
 	</div>
 
 	<script>
@@ -508,7 +414,7 @@
 	</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async="" src="./assets/js"></script>
+	<script async="" src="../static/images/js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
